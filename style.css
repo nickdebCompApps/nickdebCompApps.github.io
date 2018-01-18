@@ -1,0 +1,331 @@
+html {
+  font-family: 'Open Sans', serif;
+}
+
+body, html {
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.carousel-item {
+  height: 75vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav .nav-link {
+  color: rgba(248, 187, 208,1.0) !important;
+  font-family: 'Indie Flower', serif;
+  font-size: 20px;
+}
+
+nav .navbar-brand {
+  font-family: 'Indie Flower', serif;
+  font-size: 34px;
+  color: #F05F40;
+}
+
+.carousel-caption h3 {
+
+}
+
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  font-family: 'Indie Flower', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+nav {
+  transition: all 0.4s ease-in-out !important;
+}
+
+#mainNav .navbar-brand {
+  text-transform: uppercase;
+  color: rgba(248, 187, 208,1.0) !important;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+nav .navbar-brand {
+  color: rgba(248, 187, 208,1.0);
+}
+
+.fa-bars {
+  color: rgba(248, 187, 208,1.0);
+  font-size: 30px;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: rgba(248, 187, 208,1.0);
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(248, 187, 208,1.0);
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+  color: rgba(248, 187, 208,1.0);
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
+  color: #F05F40 !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+
+footer {
+  background-color: rgba(248, 187, 208,1.0);
+}
+
+.containMain {
+  padding-bottom: 150px;
+}
+
+.gallery [class~=col] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.image {
+  margin: auto;
+  width: 20vw;
+  height: 20vh;
+/*  background-image: url('images/447H.jpg');*/
+  background-size: cover;
+}
+
+.image .caption {
+
+}
+
+
+.map {
+  padding: 0;
+  margin: 0;
+  color:white;
+  margin-top: -100px;
+  margin-bottom: 110px;
+  padding-bottom: 40px;
+/*  background: url('images/map1.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  background-color: rgba(248, 187, 208, 0.7);
+}
+
+.map h2 {
+  font-family: 'Indie Flower', serif;
+  font-size: 48px;
+}
+
+.mapAll {
+  height: 300px;
+  border-radius: 25px;
+  margin-top: 50px;
+  width: auto;
+}
+
+.mapLeft {
+
+}
+
+.mapRight {
+
+}
+.aboutUs {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: 'Raleway', serif;
+}
+
+.aboutUs .headingOfDate {
+  font-size: 30px;
+}
+
+
+.aboutUs img {
+  width: 100px;
+  height: 100px;
+}
+
+.flavors {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.flavors ul li {
+  list-style-type: none;
+  text-decoration: none;
+  font-style: none;
+  font-family: 'Raleway', serif;
+  font-size: 20px !important;
+}
+
+.flavors .specialList {
+  padding: none;
+  margin-left: -20px !important;
+}
+
+.flavors .banner img {
+  width: 80%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.flavors .textFull {
+  font-family: 'Open Sans', serif;
+}
+
+.flavors .heading {
+    font-family: 'Indie Flower', serif;
+    font-size: 50px;
+}
+
+.findus {
+  padding-top: 120px;
+  font-family: 'Raleway', serif;
+}
+
+.contactUs {
+   background: url('images/icecreamBGG.jpeg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contactUs label {
+  font-family: 'Indie Flower', serif;
+  font-size: 20px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255 ,0.5);
+}
+
+.contactUs input, .contactUs textarea, .contactUs select {
+    background-color: rgba(255, 255, 255 ,0.6);
+    outline: none !important;
+}
+
+.contactUs input:focus, .contactUs textarea:focus, .contactUs select:focus {
+    outline: none !important;
+}
+
+*:focus {
+    outline: none;
+}
+
+.form-control {
+  transition: all 0.5s ease-in;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.contactUs .inputEmail4 {
+
+}
+
+.contactUs .inputPassword4 {
+
+}
+
+.contactUs .inputMessage {
+
+}
+
+.contactUs .inputReason {
+
+}
+
+.contactUs button {
+  width: 150px;
+  height: 50px;
+  margin-left: -5px;
+  font-family: 'Indie Flower', serif;
+  background-color: rgba(248, 187, 208,1.0);
+  border: none;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.contactUs button:hover {
+  background-color: rgba(248, 187, 208, 0.4);
+  cursor:pointer;
+  border: none;
+  outline: none;
+}
+
+.liLine {
+  width: 50%;
+  margin: auto;
+  height: 2px;
+  background-color: black;
+}
+
+.checked {
+    color: orange;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+  #mainNav .navbar-nav>li.nav-item>a.nav-link {
+    padding: 0.5rem 1rem;
+  }
+  #mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-nav>li.nav-item>a.nav-link:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #F05F40;
+  }
+  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #f05f40;
+  }
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link, #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover, #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+    color: #F05F40;
+  }
+}

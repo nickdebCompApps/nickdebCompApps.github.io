@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Cow Cream - delicious Ice Cream </title>
+  <meta name="Generator" content="NPP-Plugin">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navigation -->
+     <nav id="mainnav" class="navbar navbar-expand-lg fixed-top">
+       <div class="container">
+         <a class="navbar-brand text-center" href="index.html">CowCream</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+           <i class='fa fa-bars'></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+           <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="flavors.html">Flavors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="location.html">Find us!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+          </li>
+        </ul>
+         </div>
+       </div>
+     </nav>
+
+<section class='findus'>
+  <h2 class='text-center'>Find us!</h2>
+
+    <div class="row text-center">
+    <div class='col-3'></div>
+
+    <div class="col-6">
+    <div class="row mapAll" id="map">
+    <div class='col-6 mapLeft'>
+
+    </div>
+    <div class='col-6 mapRight'>
+
+    </div>
+    </div>
+    </div>
+
+    <div class='col-3'></div>
+    </div>
+<div class='find text-center pb-5 pt-5'>
+<h2>Get <a href='https://www.google.com/maps/dir/Ellington,+CT/41.9172705,-72.4583043/@41.9157776,-72.4595489,16z/data=!4m8!4m7!1m5!1m1!1s0x89e6f217c71653e1:0x1441021895adf285!2m2!1d-72.458236!2d41.9172826!1m0' target='_blank'>Directions</a></h2>
+</div>
+<div class='FindDirections text-center'>
+<h5>Couldn't find yourself? Search for a shop near you!</h5><br>
+
+<div class='row'>
+<div class='col-3'>
+</div>
+<div class='col-6'>
+  <div class="input-group">
+  <input id='ZipCode' type="text" class="form-control" placeholder="Zip Code" name='ZipCode'>
+  <span class="input-group-btn">
+    <button class="btn btn-default searchsubmitzip" type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+  </span>
+</div>
+
+</div>
+<div class='col-3'>
+</div>
+</div>
+</div>
+</section>
+
+     <!-- Footer -->
+     <footer class="py-5 fixed-bottom">
+       <div class="container-fluid">
+         <p class="m-0 text-center text-white">Copyright &copy; Cow Cream 2017</p>
+       </div>
+       <!-- /.container -->
+     </footer>
+
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src='script.js'>
+</script>
+<script>
+
+  $('.searchsubmitzip').click(function(e){
+    e.preventDefault();
+    clearFields('ZipCode');
+  });
+
+  function clearFields(inpID) {
+       document.getElementById(inpID).value = "";
+  }
+
+     function initMap() {
+       var uluru = {lat: 41.9173, lng: -72.4582};
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 18,
+         center: uluru
+       });
+       var marker = new google.maps.Marker({
+         position: uluru,
+         map: map
+       });
+     }
+   </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAwjAIJiA028d70ZnG2PVG5cLgI7tuHKA&callback=initMap">
+   </script>
+
+</body>
+</html>
